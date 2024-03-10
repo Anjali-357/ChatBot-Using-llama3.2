@@ -1,0 +1,41 @@
+🚀 Features
+🧠 Context-aware multi-turn conversation
+🔄 Role-based message structuring (system, user, assistant)
+⚙️ Dynamic response control (temperature tuning)
+🏗 Modular architecture (Input → Memory → LLM → Response)
+💻 Fully local inference (no API keys required)
+🛠 Tech Stack
+Python
+LLaMA 3.2 (3B)
+Ollama
+Gradio
+🏗 Architecture
+User Input
+   ↓
+Memory Manager
+   ↓
+Message Builder (role-based)
+   ↓
+Ollama (LLaMA 3.2)
+   ↓
+Formatted Response
+Uses:
+ollama.chat(model="llama3.2:3b", messages=messages)
+for structured multi-turn reasoning.
+📦 Setup
+1️⃣ Install Ollama & Model
+ollama pull llama3.2:3b
+2️⃣ Create Environment
+conda create -n llm_env python=3.10 -y
+conda activate llm_env
+3️⃣ Install Dependencies
+pip install gradio ollama
+▶️ Run
+python -m src.chatbot
+Open in browser:
+http://127.0.0.1:7860
+🔮 Future Improvements
+Streaming responses
+Vector database (RAG) integration
+Tool-calling agent framework
+Cloud deployment
