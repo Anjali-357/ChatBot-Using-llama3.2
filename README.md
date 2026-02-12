@@ -19,12 +19,16 @@ Gradio
 
 🏗 Architecture
 User Input
+
    ↓
 Memory Manager
+
    ↓
 Message Builder (role-based)
+
    ↓
 Ollama (LLaMA 3.2)
+
    ↓
 Formatted Response
 
